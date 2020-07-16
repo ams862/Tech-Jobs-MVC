@@ -18,16 +18,8 @@
         </th:block>
     </tr>
     <tr>
-        <!-- TODO #2: Complete the View Jobs By Category Table.   DONE! -->
-        <!-- Feel free to remove or modify this element if necessary. - made changes in ListController.java
-                       <td>
-                           <ul>
-                               <li>
-                                   <a th:href="@{/list/jobs(column=all,value=all)}">All Jobs</a>
-                               </li>
-                           </ul>
-                       </td>
-        -->
+        <!-- TODO #2: Complete the View Jobs By Category Table.   -->
+
         <td th:each="category : ${tableChoices}">
             <ul>
                 <li th:each="item : ${category.value}">

@@ -10,7 +10,7 @@
 
     <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
 
-    <!-- TODO #1 - Use a loop to display job results in a table.  -->
+    <!-- TODO #1 - Use a loop to display job results in a table. DONE! -->
     <!--<table th:replace = "fragments :: jobDisplay"></table> -->
 
     <table th:each="job : ${jobs}" class="job-listing">
