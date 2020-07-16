@@ -11,9 +11,7 @@ import org.launchcode.javawebdevtechjobsmvc.models.JobData;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-/**
- * Created by LaunchCode
- */
+
 @Controller
 @RequestMapping(value = "list")
 public class ListController {
@@ -32,6 +30,9 @@ public class ListController {
         tableChoices.put("location", JobData.getAllLocations());
         tableChoices.put("positionType", JobData.getAllPositionTypes());
         tableChoices.put("coreCompetency", JobData.getAllCoreCompetency());
+        tableChoices.put("all", "View All");
+        //TODO #2: Complete the View Jobs By Category Table.
+        // Completed
     }
 
     @RequestMapping(value = "")
